@@ -1,0 +1,364 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+/* Reset CSS */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Set base styles for HTML and body */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  color: #424242;
+}
+
+/* Skip link for accessibility */
+.skip-link {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  background-color: #7F27FF;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+}
+
+a {
+  display: inline-block;
+  min-width: 44px;
+  min-height: 44px;
+}
+
+/* Skip link focus state */
+.skip-link:focus {
+  top: 0;
+}
+
+/* Header */
+.header {
+  min-height: 56px;
+  transition: min-height 0.3s;
+}
+
+/* Header inner container */
+.header__inner {
+  width: 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Header title */
+.header__title {
+  font-weight: 500;
+  font-size: 4em;
+  margin: 0.5em 0.25em;
+  display: inline-block;
+  color: #7F27FF;
+  font-family: "Ms Madi", cursive;
+}
+
+/* Header menu */
+.header__menu {
+  font-size: 32px;
+  display: block;
+  margin: 10px auto;
+  width: 30px;
+  color: black;
+  text-decoration: none;
+  min-height: 44px;
+  min-width: 44px;
+  background: none;
+  border: none;
+}
+
+/* Top level navigation */
+.nav {
+  display: inline-block;
+  padding: 1.3em;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: #7F27FF;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Navigation list */
+.nav__list {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+/* Navigation item */
+.nav__item {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 24%;
+  text-align: center;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+/* Navigation links */
+.nav a {
+  display: inline-block;
+  padding: 1.3em;
+  text-decoration: none;
+  color: white;
+  min-height: 44px;
+  min-width: 44px;
+}
+
+/* Navigation link hover state */
+.nav a:hover {
+  display: inline-block;
+  color: #ffa516;
+  min-height: 44px;
+  min-width: 44px;
+}
+
+/* Jumbotron */
+.hero {
+  display: flex;
+  align-items: center;
+  min-height: 380px;
+  width: 100%;
+  text-align: center;
+  background-image: url("../public/images/heros/hero-large.jpg");
+  background-position: center;
+  background-color: #7F27FF;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Jumbotron inner container */
+.hero__inner {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+/* Jumbotron title */
+.hero__title {
+  color: #ffff;
+  font-weight: 500;
+  font-size: 36px;
+}
+
+/* Jumbotron tagline */
+.hero__tagline {
+  color: #ffff;
+  margin-top: 16px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+/* Main container */
+main {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Content section */
+.content {
+  padding: 32px;
+}
+
+/* Headline section */
+.headline {
+  overflow: auto;
+}
+
+/* Headline figure */
+.headline__figure {
+  width: 100%;
+}
+
+/* Headline figure image */
+.headline__figure img {
+  width: 100%;
+}
+
+/* Headline figure caption */
+.headline__figure figcaption {
+  text-align: center;
+  color: #666666;
+  font-size: 13px;
+  font-weight: 400;
+  margin-top: 8px;
+}
+
+/* Headline content */
+.headline__content {
+  padding: 16px 0;
+}
+
+/* Headline title */
+.headline__title {
+  font-size: 24px;
+  font-weight: 500;
+  color: #7F27FF;
+}
+
+/* Headline description */
+.headline__description {
+  font-size: 13px;
+  margin-top: 12px;
+}
+
+/* Headline button */
+.headline__button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  margin-top: 24px;
+  cursor: pointer;
+  padding: 8px 16px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  background-color: #7F27FF;
+  transition: opacity 0.3s;
+  min-height: 44px;
+  min-width: 44px;
+}
+
+/* Headline button hover state */
+.headline__button:hover {
+  opacity: 0.8;
+}
+
+/* Latest section */
+.latest {
+  width: 100%;
+  margin: 60px auto;
+  text-align: center;
+}
+
+/* Latest label */
+.latest__label {
+  font-size: 32px;
+  font-weight: lighter;
+  color: #7F27FF;
+}
+
+/* Latest label underline */
+.latest__label::after {
+  content: "";
+  margin-top: 16px;
+  display: block;
+  border-bottom: 1px solid #eeeeee;
+}
+
+/* Foods section */
+.foods {
+  margin: 32px auto auto;
+  text-align: left;
+}
+
+/* Food item */
+.food-item {
+  margin-bottom: 16px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+/* Food item content */
+.food-item__content {
+  padding: 16px;
+}
+
+/* Food item thumbnail */
+.food-item__thumbnail {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+/* Food item date */
+.food-item__date {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #999;
+}
+
+/* Food item author */
+.food-item__date__author {
+  color: red;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+/* Food item title */
+.food-item__title {
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 16px;
+  transition: 0.3s opacity;
+  color: #7F27FF;
+}
+
+/* Food item title hover state */
+.food-item__title:hover {
+  opacity: 0.5;
+}
+
+/* Food item title link */
+.food-item__title a {
+  margin: auto;
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  min-height: 44px;
+  min-width: 44px;
+}
+
+/* Food item description */
+.food-item__description {
+  font-size: 12px;
+  line-height: 1.5em;
+}
+
+/* Footer */
+footer {
+  background-color: #7F27FF;
+  padding: 1em;
+  width: 100%;
+  text-align: center;
+}
+
+/* Footer paragraph */
+footer > p {
+  padding-top: 20px;
+  font-size: 14px;
+  color: #fff;
+}
+
+/* Footer link */
+footer a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  min-height: 44px;
+}
+
+/* Foods section grid layout */
+.foods {
+  display: grid;
+  grid-row-gap: 16px;
+}
